@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid{
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+.header{
+    background-color: rgb(42, 52, 119);
+    color: #fff;
+    text-align: center;
+    padding: 36px 0;
+}
+
+.content__heading-wrap marquee{
+    padding: 32px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* end header */
+
+/* content */
+main{
+    padding-bottom: 64px;
+}
+.content__heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content__info{
+    margin: 10px 32px;
+    background-color: #333;
+    padding: 8px;
+    border-radius: 8px;
+    color: #fff;
+    min-width: 150px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.content__info-title{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.content__info.infected{
+    background-color: rgb(201, 48, 44);
+}
+
+.content__info.treated{
+    background-color: #ff9c00;
+}
+
+.content__info.recovered{
+    background-color: rgb(40, 167, 69);
+}
+
+.content__info.deceased{
+    background-color: #666;
+}
+
+.content__info-count{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.content__home .grid{
+    display: flex;
+    justify-content: center;
+}
+
+.content__home-table{
+    border-collapse: collapse;
+    width: 1000px;
+    text-align: center;
+    font-size: 18px;
+    table-layout: fixed;
+}
+
+.table{
+    height: 500px;
+    margin-top: 62px;
+    overflow-y: auto;
+}
+
+table th, table td{
+    height: 40px;
+    border: 1px solid #ddd;
+}
+
+thead tr{
+    background-color: #04AA6D;
+    color: #fff;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover{
+    background-color: #ddd;
+}
+
+tbody tr td:first-child{
+    text-align: left;
+    padding-left: 32px;
+}
+
+thead tr{
+    height: 50px;
+}
+/* end content */
+
+/* responsive */
+@media (max-width: 768px){
+    .grid{
+        padding: 0px 15px;
+    }
+    .content__info{
+        margin: 10px 12px;
+    }
+}
+
+@media (max-width: 1023px){
+    .grid{
+        padding: 0px 30px;
+    }
+}
